@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!––
+Here is the example for using a Custom Input Activity.
+A webpage needs to be created in order to use the activities.
+
+
+In this case we have a really simple HTML form 
+The page has no limitations in terms of the libraries you can use for the HTML 
+-->
+<h2>Parametry pro DPH</h2>
+
+<form action="/action_page.php">
+  Čtvrtletí:<br>
+  <input type="text" name="Čtvrtletí" id="Quarter">
+  <br>
+  Rok:<br>
+  <input type="text" name="Rok" id="Year">
+  <br>
+  Datum zpracování:<br>
+  <input type="text" name="Date" id="Date">
+  <br><br>
+  <input type="submit" value="Submit" id="SubmitButton">
+</form> 
+
+
+
+<script>
+   document.getElementById("SubmitButton").onclick = function() {
+
+		// After the values have been submited we gather all the relevant data
+   		var Quarter = document.getElementById("Quarter").value;
+   		var Year = document.getElementById("Year").value;
+   		var Date = document.getElementById("Date").value;
+
+   		// Contrusct a json string shich contain the values
+   		var OutputString = "{\"Quarter\":\"" + Quarter + "\","  +  "\"Year\":\"" + Year + "\"," + "\"Date\":\"" + Date + "\"}";
+
+   		// Here is the important bit. For a to be valid in terms of the activity the following line needs to be included and called at some point in the execution of the form.
+   		//Once the command has been called a string can be passed back to UiPath and the form will close
+   		window.external.setResult(OutputString);
+   		};
+</script>
+
+</body>
+</html>

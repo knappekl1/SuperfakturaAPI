@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="40.26.1">
+<DPHDP3 verzePis="01.02">
+<VetaD c_okec="702200" ctvrt="3" d_poddp="23.10.2019" dapdph_forma="B" dokument="DP3" k_uladis="DPH" rok="2019" trans="A" typ_platce="P" />
+<VetaP c_orient="8" c_pop="3208" c_telef="602727392" c_ufo="451" c_pracufo="2010" dic="6909265341" email="libor.knappek@gmail.com" jmeno="Libor" naz_obce="Praha 10" prijmeni="Knappek" psc="10600" stat="ČESKÁ REPUBLIKA" titul="Ing." typ_ds="F" ulice="Hyacintová" />
+<Veta1 dan23="12810" obrat23="61000" />
+<Veta4 odp_sum_nar="3685" odp_tuz23_nar="3685" pln23="17548" />
+<Veta6 dan_zocelk="12810" dano="0" dano_da="9125" dano_no="0" odp_zocelk="3685" />
+</DPHDP3>
+</Pisemnost>
